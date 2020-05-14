@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Browser Develpoment</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="card">
+    <div class="content">
+      <div class="information">
+        <p>Um modo simple, e rápdio 🏃‍♂️</p>
+        <p class="error" id="infoError"></p>
+      </div>
+      
+      <input onkeydown="uniKeyCode(event)" type="url" name="url" placeholder="http://localhost:3000" id="url">
+      <button onclick="search()">Buscar</button>
+      
+      <div class="author">
+        <p>Luan Amaro</p>
+        <p>GitHub: <a href="https://github.com/LuanAmaro" target="_blank">Meu GitHub</a></p>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript">
+  function uniKeyCode(event){
+    if(event.keyCode === 13){
+      search()
+    }
+  }
+  function search(){
+    const url = document.getElementById("url").value;
+
+    var expression = /(http(s)?:\/\/.)/g;
+    var regex = new RegExp(expression);
+    
+    if(!url.match(regex)){
+      document.getElementById("infoError").innerHTML = 'Informe URL válida!';
+      return;
+    }
+
+    window.location.href = url;
+  }
+
+  </script>
+</body>
+</html>
