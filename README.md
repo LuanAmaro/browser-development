@@ -20,7 +20,7 @@
 
 Na URL do campo você pode informar qualquer **URL** válida, exemplo abaixo utilizamos http://localhost:3000, por que eu tinha uma aplicação rodando nessa porta **:3000**
 <div align="center">
-  <img src="browserdevolpment.gif" width="500">
+  <img src="browserdevolpment.gif" width="800">
 </div>
 
 ### Requisitos
@@ -28,7 +28,7 @@ Na URL do campo você pode informar qualquer **URL** válida, exemplo abaixo uti
 Ter instalado pelo menos um gerenciador de pacotes do Node, [Npm](https://www.npmjs.com/) ou [Yarn](https://yarnpkg.com/).
 
 
-Primeiramente precisa clonar o projeto, se o passo conforme abaixo:
+Primeiramente precisa clonar o projeto, segue o passo conforme abaixo:
 
 ```bash
   $ git clone https://github.com/LuanAmaro/browser-development.git
@@ -39,7 +39,7 @@ Primeiramente precisa clonar o projeto, se o passo conforme abaixo:
 Executar na raiz do projeto o seguinte comando para instalar as dependências
 
 ```bash
-$ yarn install
+$ yarn 
 // ou $ npm install
 ```
 
